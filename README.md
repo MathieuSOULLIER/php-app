@@ -1,15 +1,22 @@
-# Run le projet
+# Projet video PHP
 
-1. **Build l'image** à l'aide de la commande docker build -t nom-de-mon-image'
+## pré requis
 
-2. **Run docker** avec la commande 'docker-compose up'
+- Installer un etideur de code style **vsc**
+- Installer docker **desktop**
 
-3. **Ouvrir l'application Docker**
+## Run le projet
 
-4. **Ouvrir son container**
+1. **Build l'image** à l'aide de la commande `docker build -t nom-de-mon-image`.
 
-5. **Aller dans Exec**
+2. **Run docker** avec la commande `docker-compose up`.
 
-6. **Ouvrir un terminal** et executer php serve.php
+3. **Ouvrir l'application Docker**.
 
-7. Exec php client.php
+4. **Ouvrir son container**.
+
+5. **Aller dans Exec**.
+
+6. **Ouvrir un terminal** et executer `php serve.php`
+
+7. Exec `php client.php`
