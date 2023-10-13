@@ -8,12 +8,7 @@ services:
       - "80:80"  # Port de l'application
 
   rabbitmq:
-    image: "rabbitmq:management"  # Image Docker 
-    ports:
-      - "5672:5672"  # Port de communication RAbitMQ
-      - "15672:15672"  # Port Web
-    environment:
-      - RABBITMQ_DEFAULT_USER=guest  
-      - RABBITMQ_DEFAULT_PASS=guest  
+    image: "rabbitmq:management"  # Image Docker *
+    container_name : rabbitmq
    
 

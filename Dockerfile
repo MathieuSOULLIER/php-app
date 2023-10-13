@@ -3,6 +3,7 @@ FROM php:7.4-apache-bullseye
 
 # Mise à jour système et installation des paquets
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+    git \
     wget \
     ffmpeg \
     lsb-release
@@ -16,3 +17,5 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 COPY . /app
 WORKDIR /app
+
+RUN composer install
